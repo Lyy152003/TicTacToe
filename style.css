@@ -1,4 +1,7 @@
-.mainDiv{
+*{
+    margin: 0px;
+}
+.mainStart{
     text-align: center;
     position: absolute;
     bottom: 0%;
@@ -15,4 +18,23 @@
     font-size: 14px;
     background-color: brown;
     color: aliceblue;
+}
+.nameDiv{
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#name{
+    margin: 25px;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+}
+#idName{
+    
+    font-size: 20px;
+    
 }
