@@ -38,3 +38,32 @@
     font-size: 20px;
     
 }
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+    
+td {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+.container{
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 15%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+h1{
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 8%;
+    left: 50%;
+    transform: translateX(-45%);
+    
+}
