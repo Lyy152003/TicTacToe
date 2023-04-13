@@ -5,11 +5,22 @@
     text-align: center;
     position: absolute;
     bottom: 0%;
-    margin-bottom: 8%;
+
     left: 50%;
     transform: translateX(-45%);
 }
-
+.img{
+    text-align: center;
+    position: absolute;
+    margin: 1%;
+    width: 1px;
+    margin-left: 31%;
+}
+.image{
+    text-align: center;
+    width: 1%;
+    margin: 1px;
+}
 
 #Start{
     border-radius: 50px;
@@ -23,14 +34,13 @@
     text-align: center;
     position: absolute;
     bottom: 0%;
-    margin-bottom: 8%;
     left: 50%;
     transform: translateX(-50%);
 }
 #name{
-    margin: 25px;
+    margin: 2px;
     width: 200px;
-    height: 30px;
+    height: 20px;
     font-size: 18px;
 }
 #idName{
@@ -56,20 +66,12 @@ td:hover {
 .container{
     text-align: center;
     position: absolute;
-    bottom: 0%;
-    margin-bottom: 15%;
-    left: 50%;
-    transform: translateX(-45%);
-}
-h1{
-    text-align: center;
-    position: absolute;
-    bottom: 0%;
-    margin-bottom: 8%;
-    left: 50%;
-    transform: translateX(-45%);
+    bottom: 15%;
     
+    left: 50%;
+    transform: translateX(-45%);
 }
+
 .status {
     text-align: center;
     font-size: 24px;
