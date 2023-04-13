@@ -15,10 +15,10 @@ h1 {
     font-weight: bold;
     color:brown;
     animation-name: glow;
-    /* dat animation cho no */
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-direction: alternate; 
+    animation-direction: alternate;
+    text-align: center;
     position: absolute;
     bottom: 0%;
     margin-bottom: 8%;
