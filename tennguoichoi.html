@@ -7,28 +7,30 @@
     <title>Tennguoichoi</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+
+<body style="background: linear-gradient(90deg, #ffde59, #ff914d);">
+    
     <div class="img">
-        <img src="./image/banco.png">
+        <img src="./image/deco.png" style="width: 1440px;">
     </div>
     <div class="nameDiv">
-        <h1>Tic Tac Toe</h1>
-        <br>
-        <label for="idName" id="idName">Nhập tên người chơi 1: </label>
-        <input type="text" id="name">
-        <br>
-        <label for="idName" id="idName">Nhập tên người chơi 2: </label>
-        <input type="text" id="name">
-
-        <br>
-
+        <div class="player1">
+            <label for="idName" id="idName">Player 1: </label>
+            <input type="text" id="name1">
+        </div>
+        <div class="player2">
+            <label for="idName" id="idName">Player 2: </label>
+            <input type="text" id="name2">    
+        </div>
         <input type="button" value="Start" id="Start"onclick="play()">
     </div>
     
     <script>
         function play(){
-            var name=document.getElementById("name").value;
-            if(name=== ""){
+            var name1=document.getElementById("name1").value;
+            var name2=document.getElementById("name2").value;
+
+            if(name1=== "" || name2=== "" || name1=== "" && name2=== ""){
                 alert("Vui lòng nhập thông tin");
             }
             else{
