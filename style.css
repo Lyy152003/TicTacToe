@@ -90,17 +90,49 @@ input[type="text"] {
 
 table {
     border-collapse: collapse;
+    text-align: center;
     margin: 0 auto;
 } 
 td {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid black;
+    border-radius: 10%;
+    
 }
+.n1{
+    border-bottom: 7px solid white;
+    border-right: 7px solid white;
+}
+.n2{
+    
+    border-right: 7px solid white;
+}
+
+.n4{
+    
+    border-right: 7px solid white;
+    border-bottom: 7px solid white;
+}
+.n5{
+    border: 7px solid white;
+}
+.n6{
+    border-top:7px solid white ;
+    border-bottom: 5px solid white;
+}
+.n7{
+    border-right: 7px solid white;
+}
+.n9{
+    border-left: 7px solid white;;
+}
+
+
 td:hover {
     background-color: lightgray;
+    
 }
 .x {
     color: #56baed;
