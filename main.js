@@ -22,6 +22,7 @@ function play(){
 }
 
 // Xử lí sự kiện form 3 - chơi game
+
   // Lấy giá trị từ local storage
 const name1 = localStorage.getItem("name1");
 const name2 = localStorage.getItem("name2");
@@ -66,13 +67,37 @@ const combo = [
         cellB.classList.add('win');
         cellC.classList.add('win');
         if (player === 'X') {
-            score1++;
-            document.getElementById("score1").innerHTML = score1;
-            localStorage.setItem("score1", score1);
+          score1++;
+          document.getElementById("score1").innerHTML = score1;
+          localStorage.setItem("score1", score1);
+          setTimeout(() => {
+            if (confirm(`${name1} wins! Do you want to play again?`)) {
+              // Đặt lại trò chơi
+              squares.forEach(cell => {
+                cell.classList.remove('win');
+                cell.textContent = '';
+              });
+              player = 'O';
+              document.getElementById("player1").classList.add('playing');
+              document.getElementById("player2").classList.remove('playing');
+            }
+          }, 100); // đợi 1 giây trước khi hiển thị hộp thoại xác nhận
         } else {
-            score2++;
-            document.getElementById("score2").innerHTML = score2;
-            localStorage.setItem("score2", score2);
+          score2++;
+          document.getElementById("score2").innerHTML = score2;
+          localStorage.setItem("score2", score2);
+          setTimeout(() => {
+            if (confirm(`${name2} wins! Do you want to play again?`)) {
+              // Đặt lại trò chơi
+              squares.forEach(cell => {
+                cell.classList.remove('win');
+                cell.textContent = '';
+              });
+              player = 'O';
+              document.getElementById("player1").classList.add('playing');
+              document.getElementById("player2").classList.remove('playing');
+            }
+          }, 100); // đợi 1 giây trước khi hiển thị hộp thoại xác nhận
         }
     } 
   }
