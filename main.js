@@ -77,7 +77,7 @@ const combo = [
                 cell.classList.remove('win');
                 cell.textContent = '';
               });
-              player = 'O';
+              player = 'X';
               document.getElementById("player1").classList.add('playing');
               document.getElementById("player2").classList.remove('playing');
             }
